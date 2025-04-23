@@ -1,12 +1,18 @@
-# React + Vite
+# ⏱️ Productivity App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Productivity App helps users track their working hours, analyze weekly performance, and stay motivated. Built with **React.js**, **Tailwind CSS**, and **JWT authentication** using a MongoDB + Node.js backend.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **JWT-based User Auth** (MongoDB + Node)
+- ⏲️ **Stopwatch Timer** for work session tracking
+- 📆 **Auto-reset every 24 hrs**
+- 📊 **Weekly Statistics Dashboard** (Recharts)
+- 🧠 **Smart Productivity Insights** *(in progress)*
+- 🌙 **Dark Mode Compatible**
+- 📱 **Responsive Design**
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js, Tailwind CSS, Recharts
+- **Backend:** Node.js, Express.js, MongoDB, JWT  
