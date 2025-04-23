@@ -1,12 +1,27 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Stopwatch from "./components/Stopwatch";
+import History from "./components/History";
+import Statistics from "./components/Statistics";
+import Navbar from "./components/Navbar";
+import Login from "./auth/Login";
+import Signup from "./auth/Signup";
+import MobileNav from "./components/MobileNav";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <h1 className="text-4xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Stopwatch />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/stats" element={<Statistics />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
 export default App;
